@@ -41,7 +41,7 @@ public class App {
     }
 
     private STRUCT toStruct(MeuTipo meuTipo, StructDescriptor structDescriptor, Connection connection) throws SQLException {
-        Object[] attributes = new Object[]{meuTipo.getMeuId(), meuTipo.getMeuNome()};
+        final Object[] attributes = new Object[]{meuTipo.getMeuId(), meuTipo.getMeuNome()};
         return new STRUCT(structDescriptor, connection, attributes);
     }
 
