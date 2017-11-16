@@ -17,7 +17,7 @@ Setup
        <scope>system</scope>
        <systemPath>${basedir}/lib/ojdbc6.jar</systemPath>
    </dependency>
-```
+   ```
 3. Materialize o *schema* em um banco de dados oracle com o arquivo `schema.sql`. 
 4. Ajuste o método `getConnection`da classe `br.com.sevenrtc.App` conforme os dados de conexão do seu banco. Exemplo:
 
